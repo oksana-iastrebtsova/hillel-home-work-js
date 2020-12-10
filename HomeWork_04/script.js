@@ -103,6 +103,6 @@ function div(operands) {
 }
 
 function showResult(operator, operands, result) {
-    return console.log(operands.join(' ' + operator + ' ') + " = " + result);
+    return console.log(operands.join(' ' + operator + ' ') + ' = ' + result);
 }
 
