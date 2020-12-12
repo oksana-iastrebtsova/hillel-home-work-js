@@ -21,23 +21,22 @@ const students = [
     }
 ]
 
-// выведет средний бал студента, ид которого передан в аргументе
-averageStudentMark(10);
+// Средний бал студента, id которого передан в аргументе
+console.log('Average By Student: ' + averageStudentMark(10));
 
-// выведет средний бал по всем студентам
-averageGroupMark(students);
+// Средний бал по всем студентам
+console.log('Average By Group: ' + averageGroupMark());
 
 function averageStudentMark(id) {
     let student = students.find(student => student.id === id);
-    if (student === undefined) {
-        console.log('Student is not found');
-    } else {
-        console.log('Student мark average: ' +
-            student.marks.reduce((acc, el) => acc + el) / student.marks.length);
-    }
+    return !student ? null : arrAverage(student.marks);
 }
 
-function averageGroupMark(students) {
-    let allMarks = students.map(({marks}) => marks).reduce((arr1, arr2) => arr1.concat(arr2));
-    console.log('Group мark average: ' + allMarks.reduce((acc, el) => acc + el) / allMarks.length);
+function averageGroupMark() {
+    let allMarks = students.flatMap(({marks}) => marks);
+    return arrAverage(allMarks);
+}
+
+function arrAverage(array) {
+    return array.reduce((acc, el) => acc + el) / array.length;
 }
