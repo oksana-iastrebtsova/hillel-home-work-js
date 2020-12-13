@@ -10,28 +10,28 @@ const NUMBER_POINTS_FOR_CORRECT_ANSWER = 10;
 const GUESTIONS = [
     {
         type: GUESTION_TYPE_PROMPT,
-        text: 'Как называется подвижный холм песка в пустыне?',
-        correctAnswer: 'Дюна'
-    },
-    {
-        type: GUESTION_TYPE_PROMPT,
-        text: 'Что образуется в раковинах устриц?',
-        correctAnswer: 'Жемчуг'
+        text: 'Сколько будет 2+2?',
+        correctAnswer: '4'
     },
     {
         type: GUESTION_TYPE_CONFIRM,
-        text: 'Горячий источник, бьющий из-под земли называется водопад?',
-        correctAnswer: ANSWER_NO
-    },
-    {
-        type: GUESTION_TYPE_PROMPT,
-        text: 'Какое растение хорошо переносит засуху?',
-        correctAnswer: 'Кактус'
-    },
-    {
-        type: GUESTION_TYPE_CONFIRM,
-        text: 'Место в пустыне, где есть вода и растительность называется оазис?',
+        text: 'Солнце встает на востоке?',
         correctAnswer: ANSWER_YES
+    },
+    {
+        type: GUESTION_TYPE_PROMPT,
+        text: 'Сколько будет 5/0 ?',
+        correctAnswer: 'Infinity'
+    },
+    {
+        type: GUESTION_TYPE_PROMPT,
+        text: 'Какого цвета небо?',
+        correctAnswer: 'Голубое'
+    },
+    {
+        type: GUESTION_TYPE_PROMPT,
+        text: 'Как правильный ответ на главный вопрос жизни, вселенной и всего такого?',
+        correctAnswer: '42'
     }
 ]
 
