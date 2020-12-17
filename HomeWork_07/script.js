@@ -1,7 +1,7 @@
 // Целое число больше нуля!
-const INTEGER = 5;
+const integer = 5;
 
-showResult(INTEGER, sumAllIntegers(INTEGER));
+showResult(integer, sumAllIntegers(integer));
 
 function showResult(integer, sum) {
     console.log('Число: ' + integer + ', сумма всех чисел: ' + sum);
