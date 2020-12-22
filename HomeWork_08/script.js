@@ -1,17 +1,14 @@
+function isArgumentValid(value) {
+    return !isNaN(value);
+}
+
 function createCalculator(num) {
-
-    let result = num;
-
-    function isValidNum(value) {
-        return !isNaN(value);
-    }
-
     return {
-        add: (num) => isValidNum(num) ? result += num : null,
-        sub: (num) => isValidNum(num) ? result -= num : null,
-        mult: (num) => isValidNum(num) ? result *= num : null,
-        div: (num) => isValidNum(num) ? result /= num : null,
-        set: (num) => isValidNum(num) ? result = num : null
+        add: (arg) => isArgumentValid(arg) ? num += arg : null,
+        sub: (arg) => isArgumentValid(arg) ? num -= arg : null,
+        mult: (arg) => isArgumentValid(arg) ? num *= arg : null,
+        div: (arg) => isArgumentValid(arg) ? num /= arg : null,
+        set: (arg) => isArgumentValid(arg) ? num = arg : null
     }
 }
 
