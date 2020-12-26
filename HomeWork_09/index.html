@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js" defer></script>
 </head>
 <body>
 
-<div class="div-todo">
-    <h3 class="title-todo">TODO:</h3>
-    <ul class="list-todo" id="listToDo">
-    </ul>
-    <input type="text" id="textNewToDo" value="">
-    <input type="button" id="buttonAddToDo" value="Добавить">
+<div class="wrapper-todo">
+    <div class="todo">
+        <h3 class="title-todo element-todo">TODO:</h3>
+        <ul class="list-todo" id="listToDo">
+        </ul>
+        <div class="container-input-todo">
+            <input type="text" class="text-new-todo element-todo" id="textNewToDo" value="">
+            <input type="button" class="button-add-todo element-todo" id="buttonAddToDo" value="Добавить">
+        </div>
+    </div>
 </div>
 
 </body>

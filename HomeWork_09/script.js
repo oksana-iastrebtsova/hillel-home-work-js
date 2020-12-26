@@ -1,4 +1,4 @@
-const CLASS_FOR_ITEM_TODO = 'item-todo';
+const CLASSES_FOR_ITEM_TODO = ['item-todo', 'element-todo'];
 const textNewToDo = document.querySelector('#textNewToDo');
 const buttonAddToDo = document.querySelector('#buttonAddToDo');
 let listToDo = document.querySelector('#listToDo');
@@ -13,22 +13,22 @@ function onButtonAddToDoClick() {
 }
 
 function isTextNewToDoEmpty() {
-    return textNewToDo.value.length == 0;
+    return textNewToDo.value.trim().length == 0;
 }
 
 function createNewItemToDo() {
     let itemToDo = document.createElement('li');
-    itemToDo.innerHTML = getTextNewToDo();
-    itemToDo.classList.add(getClassForItemToDo());
+    addStyles(itemToDo);
+    setText(itemToDo);
     return itemToDo;
 }
 
-function getTextNewToDo() {
-    return textNewToDo.value;
+function addStyles(itemToDo) {
+    CLASSES_FOR_ITEM_TODO.forEach(style => itemToDo.classList.add(style));
 }
 
-function getClassForItemToDo() {
-    return CLASS_FOR_ITEM_TODO;
+function setText(itemToDo) {
+    itemToDo.innerHTML = textNewToDo.value.trim();
 }
 
 function appendNewToDoItem(itemToDo) {

@@ -1,23 +1,42 @@
-.div-todo {
-    width: 50%;
+.wrapper-todo {
+    display: flex;
+    justify-content: center;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.element-todo {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
 }
 
 .title-todo {
-    padding: 5px;
-    margin: 5px;
     border: 1px solid #00BFFF;
-    border-radius: 4px;
     color: #0000FF;
     background-color: #58D3F7;
 }
 
 .item-todo {
-    padding:5px;
-    margin: 5px;
     border: 1px solid #d6e9c6;
-    border-radius: 4px;
     color: #3c763d;
     background-color: #dff0d8;
 }
 
+.text-new-todo {
+    flex-grow: 80;
+}
+
+.button-add-todo {
+    flex-grow: 20;
+}
+
+.container-input-todo {
+    display: flex;
+    justify-content: space-between;
+}
 
