@@ -1,3 +1,4 @@
+const TITLE_BUTTON_DELETE_ROW = 'Удалить';
 const styledTableBody = document.querySelector('#styledTableBody');
 const firstNameField = document.querySelector('#firstNameField');
 const lastNameField = document.querySelector('#lastNameField');
@@ -29,7 +30,7 @@ function createNewRow(firstName, lastName, phone) {
     row.appendChild(createCell(firstName));
     row.appendChild(createCell(lastName));
     row.appendChild(createCell(phone));
-    row.appendChild(createButton('Удалить'));
+    row.appendChild(createButton(TITLE_BUTTON_DELETE_ROW));
     return row;
 }
 
