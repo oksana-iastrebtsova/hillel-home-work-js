@@ -1,0 +1,17 @@
+.todo-item {
+    color: #555;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.todo-item-green {
+    background-color: lightgreen;
+}
+
+.todo-item-yellow {
+    background-color: lightyellow;
+}
+
